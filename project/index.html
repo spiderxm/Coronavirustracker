@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Event booking platform</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">Events</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">New event</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(9, 162, 255, 0.85);">
+            <div class="text">
+        <section id="add-event">
+          <h2>Book your events with us</h2>
+           <p>Make memories here</p>
+              <form class="form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="number" id="attendee" placeholder="Attendees">
+                <textarea id="description" cols="30" rows="10" placeholder="Description..."></textarea>
+                <select id="status">
+                    <option value="0">Free</option>
+                    <option value="1">Paid</option>
+                </select>
+                <button class="btn btn-primary">Save</button>
+              </form>
+                </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCwLaD0FL6WBTs3-An0qEurm32_NRT_5fk",
+    authDomain: "eventbookingapplication.firebaseapp.com",
+    databaseURL: "https://eventbookingapplication.firebaseio.com",
+    projectId: "eventbookingapplication",
+    storageBucket: "eventbookingapplication.appspot.com",
+    messagingSenderId: "868760153700",
+    appId: "1:868760153700:web:e5522709de190307e0b971",
+    measurementId: "G-TSH1Q2TRW1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="db.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
