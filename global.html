@@ -13,10 +13,11 @@
     <link rel="stylesheet" type="text/css" href="path/to/chartjs/dist/Chart.min.css">
 
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background: url('assets/img/backgroun.png') no-repeat center center fixed;
+background-size: 100% 100%; 
+">
     <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">Coronavirus Tracker</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
@@ -34,17 +35,18 @@
 
     <div class="container" style="margin-top:150px;margin-bottom:100px">
         <div id="virus"> </div>
-        <canvas id="myChart" width="400" height="400"></canvas>
-
     </div>
+    <div class ="container">    <div id="piechart" style="width: 1000px; height: 500px;"></div>
 
     <footer>
         <div class="container text-center">
-            <p>spiderxm ©&nbsp;</p>
+            <p><a href="https://github.com/spiderxm/Coronavirustracker">spiderxm</a>  ©&nbsp;</p>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script src="path/to/chartjs/dist/Chart.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
