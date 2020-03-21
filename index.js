@@ -6,9 +6,7 @@ function getJson() {
             return res.json();
         })
         .then(function(data) {
-            console.log(data);
             const places = data.length;
-            console.log(places);
             let confirmed = 0,
                 deaths = 0,
                 recovered = 0;
@@ -20,12 +18,6 @@ function getJson() {
             }
             let deathpercent = (deaths * 100) / confirmed;
             let recoveredpercent = (recovered * 100) / confirmed;
-
-            console.log(recoveredpercent);
-            console.log(deathpercent);
-            console.log(confirmed);
-            console.log(deaths);
-            console.log(recovered);
             html += ``;
             for (let i = 0; i < places; i++) {
                 if (i % 3 == 0) {
@@ -34,15 +26,15 @@ function getJson() {
                     <div class="row">
                 <div class = "card column mt-4 mb-4 mr-4 ml-4"
                 style = "width:295px" >
-                  <div class = "card-body" style="background:black">
-                  <h1 class = "card-title text-white" >${data[i].country}</h1>
+                  <div class = "card-body" style="background:#D0D0D0">
+                  <h1 class = "card-title" style="color:black;" >${data[i].country}</h1>
 
-                  <h4 class = "card-title text-white" > Confirmed Cases :${data[i].cases} </h4> 
-                  <h4 class = "card-title text-white" > Deadths :${data[i].deaths} </h4> 
-                  <h4 class = "card-title text-white" > Recovered :${data[i].recovered} </h4> 
-                  <h4 class = "card-title text-white" > Today Cases :${data[i].todayCases} </h4> 
-                  <h4 class = "card-title text-white" > Today Deaths :${data[i].todayDeaths} </h4> 
-                  <h4 class = "card-title text-white" > Critical :${data[i].critical} </h4> 
+                  <h4 class = "card-title text-dark" > Confirmed Cases :${data[i].cases} </h4> 
+                  <h4 class = "card-title text-dark" > Deadths :${data[i].deaths} </h4> 
+                  <h4 class = "card-title text-dark" > Recovered :${data[i].recovered} </h4> 
+                  <h4 class = "card-title text-dark" > Today Cases :${data[i].todayCases} </h4> 
+                  <h4 class = "card-title text-dark" > Today Deaths :${data[i].todayDeaths} </h4> 
+                  <h4 class = "card-title text-dark" > Critical :${data[i].critical} </h4> 
   
                   </div> 
                  </div>
@@ -54,16 +46,16 @@ function getJson() {
                     html += `
                 <div class = "card column mt-4 mb-4 mr-4 ml-4"
                 style = "width:295px" >
-                <div class = "card-body" style="background:black">
-                <h1 class = "card-title text-white" >${data[i].country}</h1>
+                <div class = "card-body" style="background:#D0D0D0">
+                  <h1 class = "card-title" style="color:black;" >${data[i].country}</h1>
 
-                <h4 class = "card-title text-white" > Confirmed Cases :${data[i].cases} </h4> 
-                <h4 class = "card-title text-white" > Deadths :${data[i].deaths} </h4> 
-                <h4 class = "card-title text-white" > Recovered :${data[i].recovered} </h4> 
-                <h4 class = "card-title text-white" > Today Cases :${data[i].todayCases} </h4> 
-                <h4 class = "card-title text-white" > Today Deaths :${data[i].todayDeaths} </h4> 
-                <h4 class = "card-title text-white" > Critical :${data[i].critical} </h4> 
-
+                  <h4 class = "card-title text-dark" > Confirmed Cases :${data[i].cases} </h4> 
+                  <h4 class = "card-title text-dark" > Deadths :${data[i].deaths} </h4> 
+                  <h4 class = "card-title text-dark" > Recovered :${data[i].recovered} </h4> 
+                  <h4 class = "card-title text-dark" > Today Cases :${data[i].todayCases} </h4> 
+                  <h4 class = "card-title text-dark" > Today Deaths :${data[i].todayDeaths} </h4> 
+                  <h4 class = "card-title text-dark" > Critical :${data[i].critical} </h4> 
+  
 
                 </div> 
                   </div>
@@ -74,15 +66,15 @@ function getJson() {
                     html += `
                 <div class = "card column mt-4 mb-4 mr-4 ml-4"
                 style = "width:295px" >
-                <div class = "card-body" style="background:black">
-                <h1 class = "card-title text-white" >${data[i].country}</h1>
+                <div class = "card-body" style="background:#D0D0D0">
+                  <h1 class = "card-title" style="color:black;" >${data[i].country}</h1>
 
-                  <h4 class = "card-title text-white" > Confirmed Cases :${data[i].cases} </h4> 
-                  <h4 class = "card-title text-white" > Deadths :${data[i].deaths} </h4> 
-                  <h4 class = "card-title text-white" > Recovered :${data[i].recovered} </h4> 
-                  <h4 class = "card-title text-white" > Today Cases :${data[i].todayCases} </h4> 
-                  <h4 class = "card-title text-white" > Today Deaths :${data[i].todayDeaths} </h4> 
-                  <h4 class = "card-title text-white" > Critical :${data[i].critical} </h4> 
+                  <h4 class = "card-title text-dark" > Confirmed Cases :${data[i].cases} </h4> 
+                  <h4 class = "card-title text-dark" > Deadths :${data[i].deaths} </h4> 
+                  <h4 class = "card-title text-dark" > Recovered :${data[i].recovered} </h4> 
+                  <h4 class = "card-title text-dark" > Today Cases :${data[i].todayCases} </h4> 
+                  <h4 class = "card-title text-dark" > Today Deaths :${data[i].todayDeaths} </h4> 
+                  <h4 class = "card-title text-dark" > Critical :${data[i].critical} </h4> 
   
                   </div> 
                   </div>
