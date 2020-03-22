@@ -30,7 +30,7 @@ function getJson() {
                   <h1 class = "card-title" style="color:black;" >${data[i].country}</h1>
 
                   <h4 class = "card-title text-dark" > Confirmed Cases :${data[i].cases} </h4> 
-                  <h4 class = "card-title text-dark" > Deadths :${data[i].deaths} </h4> 
+                  <h4 class = "card-title text-dark" > Deaths :${data[i].deaths} </h4> 
                   <h4 class = "card-title text-dark" > Recovered :${data[i].recovered} </h4> 
                   <h4 class = "card-title text-dark" > Today Cases :${data[i].todayCases} </h4> 
                   <h4 class = "card-title text-dark" > Today Deaths :${data[i].todayDeaths} </h4> 
@@ -50,7 +50,7 @@ function getJson() {
                   <h1 class = "card-title" style="color:black;" >${data[i].country}</h1>
 
                   <h4 class = "card-title text-dark" > Confirmed Cases :${data[i].cases} </h4> 
-                  <h4 class = "card-title text-dark" > Deadths :${data[i].deaths} </h4> 
+                  <h4 class = "card-title text-dark" > Deaths :${data[i].deaths} </h4> 
                   <h4 class = "card-title text-dark" > Recovered :${data[i].recovered} </h4> 
                   <h4 class = "card-title text-dark" > Today Cases :${data[i].todayCases} </h4> 
                   <h4 class = "card-title text-dark" > Today Deaths :${data[i].todayDeaths} </h4> 
@@ -70,7 +70,7 @@ function getJson() {
                   <h1 class = "card-title" style="color:black;" >${data[i].country}</h1>
 
                   <h4 class = "card-title text-dark" > Confirmed Cases :${data[i].cases} </h4> 
-                  <h4 class = "card-title text-dark" > Deadths :${data[i].deaths} </h4> 
+                  <h4 class = "card-title text-dark" > Deaths :${data[i].deaths} </h4> 
                   <h4 class = "card-title text-dark" > Recovered :${data[i].recovered} </h4> 
                   <h4 class = "card-title text-dark" > Today Cases :${data[i].todayCases} </h4> 
                   <h4 class = "card-title text-dark" > Today Deaths :${data[i].todayDeaths} </h4> 
