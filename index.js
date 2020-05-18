@@ -12,9 +12,11 @@ function getJson() {
                 recovered = 0;
             let html = '';
             for (let i = 0; i < places; i++) {
+                if(data[i].country != "World"){
                 confirmed = confirmed + data[i].cases;
                 deaths = deaths + data[i].deaths;
                 recovered = recovered + data[i].recovered;
+                }
             }
             let deathpercent = (deaths * 100) / confirmed;
             let recoveredpercent = (recovered * 100) / confirmed;
