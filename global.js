@@ -14,12 +14,14 @@ function getJson() {
                 casesToday = 0,
                 deathstoday = 0;
             for (let i = 0; i < places; i++) {
+                if(data[i].country != "World"){
                 confirmed = confirmed + data[i].cases;
                 deaths = deaths + data[i].deaths;
                 recovered = recovered + data[i].recovered;
                 critical = critical + data[i].critical;
                 casesToday = casesToday + data[i].todayCases;
                 deathstoday = deathstoday + data[i].todayDeaths;
+                }
             }
             let deathpercent = (deaths * 100) / confirmed;
             let recoveredpercent = (recovered * 100) / confirmed;
